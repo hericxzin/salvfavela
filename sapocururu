@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dispositivos de Fumaça com Sabor</title>
+ <style>
+     /* Estilos CSS */
+     body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #02304e;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         min-height: 100vh;
+     }
+     header {
+         background-color: #020522;
+         color: #e2e0e0;
+         padding: 20px;
+         text-align: center;
+         width: 100%;
+     }
+     nav {
+         background-color: #000000;
+         padding: 10px;
+         text-align: center;
+         width: 100%;
+     }
+     nav a {
+         color: #fff;
+         text-decoration: none;
+         padding: 10px 20px;
+     }
+     nav a:hover {
+         background-color: #555;
+     }
+     section {
+         padding: 20px;
+         margin: 20px;
+         background-color: #fff;
+         width: 100%;
+         max-width: 800px;
+         border-radius: 10px;
+     }
+     footer {
+         background-color: #333;
+         color: #fff;
+         padding: 10px;
+         text-align: center;
+         width: 100%;
+         position: fixed;
+         bottom: 0;
+     }
+     .produto {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+     .produto-item {
+         margin: 10px;
+         padding: 10px;
+         border: 1px solid #8338fd;
+         border-radius: 5px;
+         text-align: center;
+         width: 200px;
+         position: relative;
+     }
+     .produto-imagem {
+         width: 150px;
+         height: 150px;
+         margin-bottom: 10px;
+     }
+     .btn-comprar {
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         border-radius: 5px;
+         position: absolute;
+         bottom: 10px;
+         left: 50%;
+         transform: translateX(-50%);
+     }
+     /* Imagem para a bola */
+     #bola {
+         width: 90px;
+         height: 90px;
+         background-image: url('https://tabakkatabacaria.com/wp-content/uploads/2023/05/oxbar-7000-banana.webp');
+         background-size: cover;
+         border-radius: 50%;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         z-index: 9999; /* Para garantir que a bola esteja acima de outros elementos */
+         animation: moverBola 5s linear infinite;
+     }
+     @keyframes moverBola {
+         0% {
+             transform: translate(-50%, -50%); /* Começa do centro */
+         }
+         100% {
+             transform: translate(calc(50vw - 45px), calc(50vh - 45px)); /* Move para o canto inferior direito */
+         }
+     }
+ </style>
+</head>
+<body>
+ <header>
+     <h1>Dispositivos de Fumaça com Sabor</h1>
+ </header>
+ <nav>
+     <a href="#inicio">Início</a>
+     <a href="#sabores">Sabores</a>
+     <a href="#como-funciona">Como Funciona</a>
+     <a href="#produtos">Produtos</a>
+     <a href="#contato">Contato</a>
+ </nav>
+ <section id="inicio">
+     <h2>Bem-vindo ao Nosso Site!</h2>
+     <p>Oferecemos uma variedade de dispositivos de fumaça com sabores incríveis. Explore nosso catálogo e experimente novas sensações.</p>
+ </section>
+ <section id="sabores">
+     <h2>Nossos Sabores</h2>
+     <ul>
+         <li>Morango</li>
+         <li>Limão</li>
+         <li>Menta</li>
+         <li>Uva</li>
+     </ul>
+ </section>
+ <section id="como-funciona">
+     <h2>Como Funciona</h2>
+     <p>Nossos dispositivos de fumaça com sabor utilizam uma tecnologia inovadora que vaporiza líquidos aromatizados, proporcionando uma experiência única e agradável.</p>
+ </section>
+ <section id="produtos">
+     <h2>Nossos Produtos</h2>
+     <div class="produto">
+         <div class="produto-item">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRquLM3IBiOZWWTp0Mgjf7EMIAY9uUlQGtZyQSlV33FtF3RcHBalzKDzD9PnXoRgHI3cI&usqp=CAU">
+             <h3>Ignite V50</h3>
+             <p>...</p>
+             <button class="btn-comprar">Comprar</button>
+         </div>
+         <div class="produto-item">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3XINA8Dq7h05HSYHpKwiTsESwTPcGebnpw&usqp=CAU">
+             <h3>OXBAR G8000</h3>
+             <p> ...</p>
+             <button class="btn-comprar">Comprar</button>
+         </div>
+         <div class="produto-item">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmMECQg7r-yL2X8E0T40TsX4BxWghWxq73cA&usqp=CAU">
+             <h3>Ignite V80</h3>
+             <p>...</p>
+             <button class="btn-comprar">Comprar</button>
+         </div>
+         <div class="produto-item">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9m4WjoL83Nhxzr9qB01EnUp7M5mW9REbO4A&usqp=CAU">
+             <h3>OXBAR G8000</h3>
+             <p> ...</p>
+             <button class="btn-comprar">Comprar</button>
+         </div>
+     </div>
+ </section>
+ <section id="contato">
+     <h2>Entre em Contato</h2>
+     <p>Estamos aqui para responder a todas as suas perguntas e fornecer suporte. Entre em contato conosco através do seguinte email: contato@saboresdefumaca.com</p>
+ </section>
+ <footer>
+     <p>&copy; 2024 Dispositivos de Fumaça com Sabor</p>
+ </footer>
+ <div id="bola"></div>
+</body>
+</html>
